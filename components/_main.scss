@@ -1,0 +1,121 @@
+.main{
+    background-color: #f5f5f5;
+    width: 100%;
+    font-family: 'League Gothic', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+    &__banner{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        img{
+            margin: 0;
+            width: 70%;            
+        }
+    }
+
+    &__aboutUs{
+        background-color: #f5f5f5;
+        width: 70%;
+        height: 260px;
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+        
+            
+        
+        &-text{
+
+            h2{
+                color: #DB5412;
+                font-size: 40px;
+                padding-bottom: 1.5rem;
+            }
+
+            p{
+                color: #163586;
+                width: 80%;
+                font-size: 15px;
+                padding: 1rem;
+                padding-right: 0;
+                padding-left: 0;
+            }
+        }
+
+        &-img{
+            height: 100%;
+        }
+
+    }
+
+
+    &__carac {
+        width: 70%;
+        height: 400px;
+        background-color: #1B9AAA;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-cont{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            row-gap: 5rem;
+            column-gap: 3rem;
+            
+            justify-content: center;
+
+            &-div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: #163586;
+
+                
+                i{
+                    padding-bottom: 1rem;
+                    
+                    img{
+                        height: 45px;
+                        color: #f5f5f5;
+                    }
+                }
+                h3{
+                    font-size: 23px;
+                    padding-bottom: .3rem;
+                }
+            }
+        }
+    }
+
+    &__cta{
+        width: 70%;
+        background-image: url(../img/cta.jpg);
+        background-position: center;
+        height: 257px;
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+
+        a{
+            text-align: center;
+            color: #f5f5f5;
+            text-decoration: none;
+            background-color: #DB5412;
+            padding: .8rem;
+            border-radius: 10px;
+            font-family: 'League Gothic', sans-serif;
+            font-size: 30px;
+            width: 25%;
+            box-shadow: 0 3px 10px rgb(159, 159, 159);
+        }
+
+    }
+}
