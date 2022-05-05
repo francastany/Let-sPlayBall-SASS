@@ -1,3 +1,16 @@
+$breakpoints: (
+    sm : 580px,
+    md : 850px,
+    lg : 1024px,
+);
+
+@mixin media ($breakpoint) {
+    
+    @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+
 .header{
     background-color: #f5f5f5;
     font-family: 'League Gothic', sans-serif;
@@ -33,6 +46,10 @@
                     color: #FE7F00;
                     text-decoration: none;
                     font-size: 1.3rem;
+
+                    &:hover{
+                        color: #163586;
+                    }
                 }
             }
         }
@@ -52,6 +69,10 @@
                 padding: 0.5rem;
 
             }
+        }
+
+        @include media(md){
+            right: 1.5rem;
         }
     }
 }
