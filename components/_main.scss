@@ -1,4 +1,5 @@
 $breakpoints: (
+    xs : 426px,
     sm : 560px,
     md : 850px,
     lg : 1024px,
@@ -51,9 +52,7 @@ $breakpoints: (
         &-text{
 
             h2{
-                color: #DB5412;
-                font-size: 40px;
-                padding-bottom: 1.5rem;
+                @extend .subtitle;
 
                 @include media(sm){
                     padding-bottom: .5rem;
@@ -107,7 +106,7 @@ $breakpoints: (
 
     &__carac {
         width: 70%;
-        height: 400px;
+        min-height: 400px;
         background-color: #1B9AAA;
         display: flex;
         justify-content: center;
@@ -144,6 +143,11 @@ $breakpoints: (
                 p{
                     text-align: center;
                 }
+            }
+            @include media(xs){
+                padding: 1rem;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
             }
         }
 
